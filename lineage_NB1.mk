@@ -15,7 +15,7 @@ PRODUCT_SHIPPING_API_LEVEL := 27
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from NB1 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -23,7 +23,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Extra Google/Pixel features
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := aosp_NB1
+PRODUCT_NAME := lineage_NB1
 PRODUCT_DEVICE := NB1
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
